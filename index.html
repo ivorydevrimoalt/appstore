@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apps Gone Free</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .app-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .app-card {
+            width: 250px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .app-card img {
+            width: 100%;
+            max-height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .app-card h3 {
+            margin-bottom: 5px;
+        }
+
+        .app-card p {
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+
+        .app-card button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Apps Gone Free</h1>
+
+    <div class="app-container">
+
+        <div class="app-card">
+            <img src="bloons_td_6.png" alt="Bloons TD 6">
+            <h3>Bloons TD 6</h3>
+            <p>Strategic Action #1</p>
+            <button onclick="redirectToAppStore('https://apps.apple.com/app/bloons-td-6/id1009323792')">Free</button>
+        </div>
+
+        <div class="app-card">
+            <img src="altos_odyssey.png" alt="Alto's Odyssey">
+            <h3>Alto's Odyssey</h3>
+            <p>Action, Sports, etc.</p>
+            <button onclick="redirectToAppStore('https://apps.apple.com/app/altos-odyssey/id1213838334')">Free</button>
+        </div>
+
+        <div class="app-card">
+            <img src="superimpose_x.png" alt="Superimpose X">
+            <h3>Superimpose X</h3>
+            <p>Photo & Video #1</p>
+            <button onclick="redirectToAppStore('https://apps.apple.com/app/superimpose-x/id1440140772')">Free</button>
+        </div>
+
+        <div class="app-card">
+            <img src="cat_quest.png" alt="Cat Quest">
+            <h3>Cat Quest</h3>
+            <p>Role Playing, Action & RPG</p>
+            <button onclick="redirectToAppStore('https://apps.apple.com/app/cat-quest/id1205551114')">Free</button>
+        </div>
+
+        <div class="app-card">
+            <img src="monument_valley_2.png" alt="Monument Valley 2">
+            <h3>Monument Valley 2</h3>
+            <p>Adventure, Puzzle #7</p>
+            <button onclick="redirectToAppStore('https://apps.apple.com/app/monument-valley-2/id1094064178')">Free</button>
+        </div>
+
+        <div class="app-card">
+            <img src="mini_metro.png" alt="Mini Metro">
+            <h3>Mini Metro</h3>
+            <p>Strategy, Simulation #37</p>
+            <button onclick="redirectToAppStore('https://apps.apple.com/app/mini-metro/id988257955')">Free</button>
+        </div>
+
+    </div>
+
+    <script>
+        function redirectToAppStore(url) {
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+</html>
