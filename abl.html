@@ -42,25 +42,7 @@ var interval = setInterval(function() {
     var randomTime = Math.floor(Math.random() * 30) + 1;
     myVideo.currentTime = randomTime;
       const h1Elements = document.querySelectorAll('h1');
-let randomX = Math.random() * 100; // Example: Random x position between 0 and 100
-let randomY = Math.random() * 100; // Example: Random y position between 0 and 100
-let randomRotation = Math.random() * 360; // Example: Random rotation between 0 and 360 degrees
 
-// Apply the random values
-h1Elements.style.left = randomX + "px";
-h1Elements.style.top = randomY + "px";
-h1Elements.style.transform = "rotate(" + randomRotation + "deg)"; 
-
-// Optional: Repeat the randomization every second (1000 milliseconds)
-setInterval(() => {
-  randomX = Math.random() * 100;
-  randomY = Math.random() * 100;
-  randomRotation = Math.random() * 360;
-
-  h1Elements.style.left = randomX + "px";
-  h1Elements.style.top = randomY + "px";
-  h1Elements.style.transform = "rotate(" + randomRotation + "deg)"; 
-}, 10);
 h1Elements.forEach(h1 => {
   let newText = '';
   for (let i = 0; i < h1.textContent.length; i++) {
