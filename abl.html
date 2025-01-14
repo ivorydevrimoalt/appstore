@@ -47,9 +47,9 @@ let randomY = Math.random() * 100; // Example: Random y position between 0 and 1
 let randomRotation = Math.random() * 360; // Example: Random rotation between 0 and 360 degrees
 
 // Apply the random values
-element.style.left = randomX + "px";
-element.style.top = randomY + "px";
-element.style.transform = "rotate(" + randomRotation + "deg)"; 
+h1Elements.style.left = randomX + "px";
+h1Elements.style.top = randomY + "px";
+h1Elements.style.transform = "rotate(" + randomRotation + "deg)"; 
 
 // Optional: Repeat the randomization every second (1000 milliseconds)
 setInterval(() => {
@@ -57,9 +57,9 @@ setInterval(() => {
   randomY = Math.random() * 100;
   randomRotation = Math.random() * 360;
 
-  element.style.left = randomX + "px";
-  element.style.top = randomY + "px";
-  element.style.transform = "rotate(" + randomRotation + "deg)"; 
+  h1Elements.style.left = randomX + "px";
+  h1Elements.style.top = randomY + "px";
+  h1Elements.style.transform = "rotate(" + randomRotation + "deg)"; 
 }, 10);
 h1Elements.forEach(h1 => {
   let newText = '';
