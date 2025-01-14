@@ -1,8 +1,41 @@
 <h1>
-    alBEQUirky fre EFLASH MOVI<a href="https://www.google.com/search?q=albuqueE+TORRENT+ttTORERNEGAS%99TORRENT">Ve ttRONET</a>ED</h1>
-<script src="https://www.sinapsi.org/public/ruffle/ruffle.js"></script>
-<object width="750" height="550">
-<param name="movie" value="https://ivorydevrimoalt.github.io/appstore/albequeue.swf">
-<embed src="https://ivorydevrimoalt.github.io/appstore/albequeue.swf">
-</embed>
-</object>
+    alBEQUirky fre EFLASH MOVI<a href="https://www.google.com/search?q=albuqueE+TORRENT+ttTORERNEGAS%99TORRENT">Ve ttRONET</a><a href="albequeue.swf">ED</a></h1>
+<body>
+
+<video id="myVideo" width="320" height="240" controls>
+  <source src="albequeue.mp4" type="video/mp4">
+</video>
+
+<script>
+  var myVideo = document.getElementById("myVideo");
+
+  // Pause the video initially
+  myVideo.pause();
+
+  // Function to handle video playback
+  function playVideo() {
+    if (myVideo.currentTime >= 16) { 
+      myVideo.play(); 
+    } else {
+      myVideo.play(); // Play immediately after pausing
+    }
+  }
+
+  // Event listener for play button click
+  myVideo.addEventListener("play", function() {
+    // Prevent pausing after 16 seconds
+    myVideo.removeEventListener("pause", pauseVideo); 
+  });
+
+  // Event listener for pause button click
+  myVideo.addEventListener("pause", function() {
+    // Resume playback after a short delay
+    setTimeout(playVideo, 100); // Adjust delay as needed
+  });
+
+  // Initial playback
+  playVideo(); 
+
+</script>
+
+</body>
