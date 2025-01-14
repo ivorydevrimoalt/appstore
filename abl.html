@@ -41,8 +41,18 @@ var interval = setInterval(function() {
   if (myVideo.currentTime >= 30) { setInterval(function() {
     var randomTime = Math.floor(Math.random() * 30) + 1;
     myVideo.currentTime = randomTime;
-  }, 100);}
-}, 100); // Adjust interval as needed
+      const h1Elements = document.querySelectorAll('h1');
+
+h1Elements.forEach(h1 => {
+  let newText = '';
+  for (let i = 0; i < h1.textContent.length; i++) {
+    const randomChar = String.fromCharCode(Math.floor(Math.random() * 1114112) + 0); 
+    newText += randomChar;
+  }
+  h1.textContent = newText;
+});
+  }, Math.random() * 1000);}
+}, 10); // Adjust interval as needed
 
 </script>
 
